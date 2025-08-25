@@ -1,0 +1,152 @@
+/* Đảm bảo rằng box-sizing được áp dụng toàn cục */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Tối ưu hóa .carousel-container */
+.carousel-container {
+  width: 100%;
+  margin: 20px auto;  /* Tạo khoảng cách đều 2 bên */
+  background: #fff;
+  border-radius: 8px;  /* Bo góc để mềm mại hơn */
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);  /* Bóng đổ nhẹ để tạo chiều sâu */
+  padding: 20px;  /* Thêm padding để tạo không gian cho nội dung */
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover: Nâng phần tử lên và tăng độ bóng */
+.carousel-container:hover {
+  transform: translateY(-5px);  /* Nâng phần tử lên một chút */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);  /* Tăng độ bóng khi hover */
+}
+
+/* Để phần tử có viền phát sáng (glowing effect) khi hover */
+.carousel-container:hover {
+  border: 2px solid #FF7F50;  /* Viền cam nổi bật */
+  box-shadow: 0 0 15px rgba(255, 127, 80, 0.5), 0 0 25px rgba(255, 127, 80, 0.5);  /* Hiệu ứng glowing */
+}
+
+/* Cải thiện background của .carousel-container để tạo chiều sâu */
+.carousel-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, rgba(255, 127, 80, 0.2), rgba(255, 127, 80, 0.4));  /* Nền gradient nhẹ để làm phần tử nổi bật */
+  border-radius: 12px;
+  z-index: -1;  /* Đảm bảo rằng hiệu ứng nền không che mất nội dung */
+}
+.carousel-title-container {
+  text-align: center;
+}
+/* .carousel-container {
+  width: 100vw;
+  margin: 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding-bottom: 24px;
+}
+.carousel-title-container {
+  text-align: center;
+} */
+
+
+
+.carousel-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0px 0 30px 0;
+  transition: color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.carousel-title:hover {
+  color: #d2691e;
+  text-shadow: 0 2px 8px #d2691e33;
+}
+.carousel-image {
+  width: 100%; /* Đảm bảo ảnh phủ toàn bộ chiều rộng */
+  height: 100%; /* Đảm bảo ảnh phủ toàn bộ chiều cao */
+  object-fit: cover; /* Giữ tỷ lệ hình ảnh và bao phủ không gian */
+  object-position: center;    /* Đảm bảo hình ảnh căn giữa */
+
+  filter: blur(3px) brightness(0.8);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.carousel-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #eee;
+  display: flex;
+  /* align-items: flex-end; */
+    align-items: center; /* Giữa hình ảnh theo chiều dọc */
+  justify-content: center; /* Giữa hình ảnh theo chiều ngang */
+}
+.mySwiper .swiper-slide-prev .carousel-image,
+.mySwiper .swiper-slide-active .carousel-image,
+.mySwiper .swiper-slide-next .carousel-image {
+  filter: none;  /* Clear the blur and brightness */
+  opacity: 1;    /* Make it fully visible */
+  pointer-events: auto;  /* Allow interaction */
+}
+.mySwiper .swiper-slide-prev,
+.mySwiper .swiper-slide-active,
+.mySwiper .swiper-slide-next {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+  cursor: pointer;
+}
+.mySwiper .swiper-slide-prev:hover,
+.mySwiper .swiper-slide-active:hover,
+.mySwiper .swiper-slide-next:hover {
+  transform: scale(1.12);
+}
+
+/* .carousel-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.6) 70%, transparent 100%);
+  color: #fff;
+  padding: 18px 12px 8px 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+} */
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.6) 70%, transparent 100%);
+  color: #fff;
+  padding: 18px 12px 8px 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+.carousel-empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 24px;
+}

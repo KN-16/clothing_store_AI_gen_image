@@ -1,0 +1,276 @@
+.header-opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 2px 8px #f0f1f2;
+  padding: 0 32px;
+  height: 68px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 18px;
+}
+
+.logo img {
+  height: 48px;
+  cursor: pointer;
+}
+
+.nav-opt {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1 1 auto;
+}
+
+.nav-item {
+  position: relative;
+  padding: 8px 14px;
+  color: #222;
+  font-size: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  background: #f5a62322;
+  color: #f5a623;
+}
+
+.product .dropdown-product {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  box-shadow: 0 4px 16px #0001;
+  min-width: 160px;
+  z-index: 10;
+  padding: 8px 0;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.product .dropdown-product.show {
+  display: flex;
+}
+
+.dropdown-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-row {
+  padding: 8px 18px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.dropdown-row:hover {
+  background: #f5a62322;
+}
+
+.dropdown-sub {
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  background: #fff;
+  box-shadow: 0 4px 16px #0001;
+  border-radius: 6px;
+  min-width: 120px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.dropdown-sub-item {
+  padding: 8px 18px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-sub-item:hover {
+  background: #f5a62344;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-opt {
+  position: relative;
+}
+
+.search-icon {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.search-icon:hover {
+  background: #f5a62322;
+}
+
+.search-bar-opt {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 2px 6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.search-bar-opt input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 8px 8px;
+  width: 180px;
+}
+
+.search-bar-opt button {
+  background: #f5a623;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-left: 4px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-bar-opt button:hover {
+  background: #d48806;
+}
+
+.close-search {
+  margin-left: 6px;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.user-opt {
+  position: relative;
+}
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  font-size: 15px;
+}
+
+.user-btn:hover {
+  background: #f5a62322;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 16px #0001;
+  border-radius: 6px;
+  min-width: 160px;
+  z-index: 20;
+  padding: 8px 0;
+}
+
+.user-dropdown > div {
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.user-dropdown > div:hover {
+  background: #f5a62322;
+}
+
+.cart-opt {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.cart-opt:hover {
+  background: #f5a62322;
+}
+
+.cart-count {
+  margin-left: 2px;
+  background: #fff;
+  border: 1px solid #f5a623;
+  border-radius: 4px;
+  padding: 0 6px;
+  color: #f5a623;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.lang-opt {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.lang-opt:hover {
+  background: #f5a62322;
+}
+
+@media (max-width: 1100px) {
+  .header-opt {
+    padding: 0 8px;
+    gap: 8px;
+  }
+  .nav-opt {
+    gap: 8px;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+}
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 8px #f0f1f2;
+  transition: top 0.3s, opacity 0.3s;
+  opacity: 1;
+}
+
+.main-header.hidden {
+  top: -120px;
+  opacity: 0;
+  pointer-events: none;
+}

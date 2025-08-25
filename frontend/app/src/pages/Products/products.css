@@ -1,0 +1,197 @@
+/* ===== Products Page Layout =====
+.products-container {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.products-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.products-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.products-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-input,
+.filter-select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 16rem;
+  background-color: #ffffff;
+}
+
+.filter-select {
+  appearance: none;
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+}
+/* 
+/* Featured banner */
+/* .featured-banner {
+  background-color: #fef3c7;
+  border-left: 4px solid #facc15;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #92400e;
+}
+
+ .featured-banner strong {
+  color: #78350f;
+} */
+
+/* Grid layout */
+/* .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+  justify-content: center;
+} */
+
+/* Media queries */
+/* Tablet */
+ /* @media (min-width: 768px) {
+  .products-filters {
+    justify-content: space-between;
+  }
+}  */
+
+
+/* 
+/* Phase 2 code */
+.products-container {
+  padding: 2rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.products-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .products-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.products-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.featured-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fef3c7;
+  border-left: 4px solid #facc15;
+  border-radius: 0.5rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.products-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* Vùng bao sản phẩm */
+.products-container {
+  padding: 2rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Tiêu đề và header sản phẩm */
+.products-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .products-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Bộ lọc */
+.products-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Banner sản phẩm nổi bật */
+.featured-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fef3c7;
+  border-left: 4px solid #facc15;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid sản phẩm */
+.products-grid {
+  margin-top: 1rem;
+}
+
+/* Loading indicator */
+.products-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* Responsive tối ưu hơn nếu cần */
+@media (max-width: 600px) {
+  .products-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+} 

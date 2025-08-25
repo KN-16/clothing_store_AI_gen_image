@@ -1,0 +1,95 @@
+.cart-container {
+  padding: 16px;
+}
+
+.cart-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cart-table th,
+.cart-table td {
+  text-align: center;
+  padding: 12px 8px;
+}
+
+.col-checkbox {
+  width: 120px;
+}
+
+.col-price {
+  min-width: 140px;
+  font-weight: 600;
+}
+
+.col-action {
+  width: 60px;
+}
+
+.product-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.cart-row {
+  transition: background 0.25s ease;
+}
+
+.cart-row:hover {
+  background: #f9fafb;
+}
+
+.cart-row.selected {
+  background: #e6f4ff !important;
+}
+
+.cart-footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.total {
+  font-weight: 600;
+  color: #333;
+}
+
+.delete-btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.quantity-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+}
+

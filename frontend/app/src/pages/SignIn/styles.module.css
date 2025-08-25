@@ -1,0 +1,278 @@
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+}
+
+.form {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.label {
+  align-self: flex-start;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.icon {
+  color: #bdbdbd;
+  margin-right: 8px;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.forgot {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.forgotBtn {
+  background: none;
+  border: none;
+  color: #b16cea;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.or {
+  margin: 10px 0 8px 0;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.socialBtn {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.socialBtn:hover {
+  background: #e0e0e0;
+}
+
+.signupText {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.signupBtn {
+  background: none;
+  border: none;
+  color: #b16cea;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none; /* ✅ bỏ dấu gạch dưới */
+/* } */ 
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+}
+
+.form {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.label {
+  align-self: flex-start;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.icon {
+  color: #bdbdbd;
+  margin-right: 8px;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.forgot {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.forgotBtn {
+  background: none;
+  border: none;
+  color: #b16cea;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.or {
+  margin: 10px 0 8px 0;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.socialBtn {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.socialBtn:hover {
+  background: #e0e0e0;
+}
+
+.signupText {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.signupBtn {
+  background: none;
+  border: none;
+  color: #b16cea;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* error box */
+.error {
+  width: 100%;
+  background: #ffe6e6;
+  color: #a80000;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+}

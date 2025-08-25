@@ -1,0 +1,277 @@
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+}
+
+.form {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.label {
+  align-self: flex-start;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.icon {
+  color: #bdbdbd;
+  margin-right: 8px;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.forgot {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.forgotBtn {
+  background: none;
+  border: none;
+  color: #b16cea;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.or {
+  margin: 10px 0 8px 0;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.socialBtn {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.socialBtn:hover {
+  background: #e0e0e0;
+}
+
+.signupText {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.signupBtn {
+  background: none;
+  border: none;
+  color: #b16cea;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none; /* ✅ bỏ dấu gạch dưới */
+/* } */ 
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+  padding: 20px;
+}
+
+.form {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  transition: 0.3s;
+}
+
+.field:focus-within {
+  background: #e8f0fe;
+}
+
+.field input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 10px;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.icon {
+  color: #888;
+}
+
+.submitBtn {
+  width: 100%;
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: linear-gradient(90deg, #38f9d7, #43e97b);
+}
+
+.switchText {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.link {
+  color: #6a82fb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.85rem;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials button:hover {
+  background: #e0e0e0;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

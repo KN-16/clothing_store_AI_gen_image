@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_db_store_clothing
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root@123  # Mật khẩu mạnh
+      POSTGRES_DB: store_clothing  # Tên database
+    ports:
+      - "5432:5432"  # Mở cổng 5432 để kết nối từ bên ngoài
+    volumes:
+      - ./database:/var/lib/postgresql/data  # Ánh xạ thư mục database trên máy host vào thư mục dữ liệu của PostgreSQL trong container
+#     networks:
+#       - mynetwork
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_store_clothing
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@gmail.com    # Email để đăng nhập vào pgAdmin
+      PGADMIN_DEFAULT_PASSWORD: admin123          # Mật khẩu để đăng nhập
+    ports:
+      - "5050:80"   # Truy cập pgAdmin qua localhost:5050
+    depends_on:
+      - db
+    volumes:
+      - ./pgadmin_data:/var/lib/pgadmin
+# volumes:
+#   postgres_data:
+
+# networks:
+#   mynetwork:
+#     driver: bridge
